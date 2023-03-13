@@ -4,7 +4,7 @@ on:
     branches:
     - main
   pull_request:
-      branches:
+    branches:
     - main
 jobs:
  test:
@@ -17,7 +17,7 @@ jobs:
       node-version: "18"
   - name: Pretend to build
     run: echo Pretending to build some kind of app...
-  - name: Push artifact foo.txt
+  - name: Push artifact foot.txt
     uses: actions/upload-artifact@v3
     with:
       name: my-artifact
